@@ -1,5 +1,9 @@
 ##The first step is to create a shuffled file of all the 400 genomes short reads
 #!/bin/sh
+#$ -l h_vmem=6G
+#$ -N shuffleSeq
+#$ -pe smp 6
+#$ -cwd
 cd ~direko/results
 ###Get the pairwise reads into separate directories
 mkdir R1
